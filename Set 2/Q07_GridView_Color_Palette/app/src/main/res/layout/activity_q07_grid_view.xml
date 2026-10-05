@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_screen"
+    android:background="@color/screen_background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/q07_title"
+        android:textSize="@dimen/text_size_title"
+        android:textStyle="bold"
+        android:textColor="@color/primary"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/q07_desc"
+        android:textSize="@dimen/text_size_subtitle"
+        android:textColor="@color/text_secondary"
+        android:gravity="center"
+        android:layout_marginTop="4dp" />
+
+    <GridView
+        android:id="@+id/gvColors"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:numColumns="3"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:stretchMode="columnWidth" />
+
+    <TextView
+        android:id="@+id/tvSelectedColorBanner"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/q07_selected_preview"
+        android:textSize="@dimen/text_size_header"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@drawable/card_rounded_bg"
+        android:elevation="3dp"
+        android:layout_marginTop="@dimen/margin_medium" />
+</LinearLayout>

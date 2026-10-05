@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_screen"
+    android:background="@color/screen_background">
+
+    <TextView
+        android:id="@+id/tvWelcomeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome, Guest"
+        android:textSize="@dimen/text_size_title"
+        android:textStyle="bold"
+        android:textColor="@color/color_success"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin_large" />
+
+    <Button
+        android:id="@+id/btnBackActivity"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:text="@string/btn_back"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_rounded_accent"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/margin_large" />
+
+    <TextView
+        android:id="@+id/tvLifecycleLog2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logcat Events:
+"
+        android:background="@drawable/card_rounded_bg"
+        android:padding="@dimen/padding_card"
+        android:textColor="@color/text_secondary"
+        android:layout_marginTop="@dimen/margin_large" />
+</LinearLayout>

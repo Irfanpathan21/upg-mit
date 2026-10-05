@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_screen"
+    android:gravity="center_horizontal"
+    android:background="@color/screen_background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/q06_title"
+        android:textSize="@dimen/text_size_title"
+        android:textStyle="bold"
+        android:textColor="@color/primary"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/q06_desc"
+        android:textSize="@dimen/text_size_subtitle"
+        android:textColor="@color/text_secondary"
+        android:gravity="center"
+        android:layout_marginTop="4dp" />
+
+    <FrameLayout
+        android:layout_width="@dimen/image_caption_width"
+        android:layout_height="@dimen/image_caption_height"
+        android:layout_marginTop="@dimen/margin_large"
+        android:background="@drawable/card_rounded_bg"
+        android:elevation="4dp">
+
+        <ImageView
+            android:id="@+id/ivMainImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/android_logo"
+            android:scaleType="centerInside"
+            android:contentDescription="Android Logo" />
+
+        <TextView
+            android:id="@+id/tvCaption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="@string/q06_caption_text"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_body"
+            android:gravity="center"
+            android:padding="8dp"
+            android:background="#B31A237E" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/margin_large">
+
+        <Button
+            android:id="@+id/btnToggleCaption"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:text="@string/q06_toggle_caption"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_rounded_primary"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnChangeColor"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:text="@string/q06_change_color"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_rounded_accent"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/margin_small" />
+
+        <Button
+            android:id="@+id/btnExitApp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:text="@string/btn_exit"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_rounded_primary"
+            android:backgroundTint="@color/color_error"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/margin_small" />
+    </LinearLayout>
+</LinearLayout>

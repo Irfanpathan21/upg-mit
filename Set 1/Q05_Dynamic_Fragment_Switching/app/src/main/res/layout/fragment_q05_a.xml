@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_card"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fragment A: Data Entry Form"
+        android:textSize="@dimen/text_size_header"
+        android:textStyle="bold"
+        android:textColor="@color/primary" />
+
+    <EditText
+        android:id="@+id/etFragName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittext_height"
+        android:hint="Enter Name"
+        android:background="@drawable/card_rounded_bg"
+        android:padding="@dimen/padding_button_vertical"
+        android:layout_marginTop="@dimen/margin_medium" />
+
+    <EditText
+        android:id="@+id/etFragEmail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittext_height"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/card_rounded_bg"
+        android:padding="@dimen/padding_button_vertical"
+        android:layout_marginTop="@dimen/margin_small" />
+
+    <Button
+        android:id="@+id/btnSaveFragment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:text="@string/q05_save_data"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_rounded_primary"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/margin_large" />
+</LinearLayout>

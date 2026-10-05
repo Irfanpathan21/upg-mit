@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base App Palette -->
+    <color name="primary">#1A237E</color>
+    <color name="primary_dark">#0D1642</color>
+    <color name="primary_light">#534BAE</color>
+    <color name="accent">#FF4081</color>
+    <color name="accent_dark">#C51162</color>
+    <color name="screen_background">#F4F6F9</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#666666</color>
+    <color name="gray_border">#D0D5DD</color>
+    <color name="gray_light">#E0E0E0</color>
+
+    <!-- Practical Specific Colors -->
+    <color name="color_success">#2E7D32</color>
+    <color name="color_error">#D32F2F</color>
+    <color name="color_warning">#F57C00</color>
+    <color name="color_info">#0288D1</color>
+    <color name="color_c_to_f">#E64A19</color>
+    <color name="color_f_to_c">#1976D2</color>
+    <color name="color_dark_bg">#121212</color>
+    <color name="color_dark_card">#1E1E2E</color>
+    <color name="color_table_row_alt">#E1F5FE</color>
+
+    <!-- 12 GridView Palette Colors -->
+    <color name="pal_red">#E53935</color>
+    <color name="pal_pink">#D81B60</color>
+    <color name="pal_purple">#8E24AA</color>
+    <color name="pal_indigo">#3949AB</color>
+    <color name="pal_blue">#1E88E5</color>
+    <color name="pal_teal">#00897B</color>
+    <color name="pal_green">#43A047</color>
+    <color name="pal_lime">#C0CA33</color>
+    <color name="pal_amber">#FFB300</color>
+    <color name="pal_orange">#FB8C00</color>
+    <color name="pal_deep_orange">#F4511E</color>
+    <color name="pal_brown">#6D4C41</color>
+
+    <!-- Theme Switcher Colors -->
+    <color name="theme_red_bg">#FFCDD2</color>
+    <color name="theme_green_bg">#C8E6C9</color>
+    <color name="theme_blue_bg">#BBDEFB</color>
+</resources>

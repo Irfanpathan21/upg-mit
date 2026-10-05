@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Q17 Dynamic Fragment Management</string>
+    <string name="lab_title">Android Programming Lab (UIANP308P)</string>
+    <string name="lab_subtitle">Complete Practical Solutions (Practicals 1 to 20)</string>
+
+    <!-- Common Strings -->
+    <string name="btn_calculate">Calculate</string>
+    <string name="btn_reset">Reset</string>
+    <string name="btn_submit">Submit</string>
+    <string name="btn_next">Next</string>
+    <string name="btn_back">Back</string>
+    <string name="btn_clear">Clear</string>
+    <string name="btn_exit">Exit</string>
+    <string name="dialog_error_title">Validation Error</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_yes">Yes</string>
+    <string name="dialog_no">No</string>
+
+    <!-- Q01 Strings -->
+    <string name="q01_title">Simple Interest Calculator</string>
+    <string name="q01_desc">Practical 1: LinearLayout (vertical) with SI &amp; Total</string>
+    <string name="q01_principal_hint">Enter Principal Amount (P) in ₹</string>
+    <string name="q01_rate_hint">Enter Annual Interest Rate (R %)</string>
+    <string name="q01_time_hint">Enter Time Period (T in Years)</string>
+    <string name="q01_error_empty">All fields (Principal, Rate, and Time) are required!</string>
+    <string name="q01_si_label">Simple Interest (SI): ₹ 0.00</string>
+    <string name="q01_total_label">Total Amount (P + SI): ₹ 0.00</string>
+
+    <!-- Q02 Strings -->
+    <string name="q02_title">Login Screen with Custom Theme</string>
+    <string name="q02_desc">Practical 2: RelativeLayout with Custom Rounded Theme</string>
+    <string name="q02_user_hint">Enter username (admin)</string>
+    <string name="q02_pass_hint">Enter password (1234)</string>
+    <string name="q02_login_btn">LOGIN</string>
+    <string name="q02_success_toast">Login Successful</string>
+    <string name="q02_invalid_dialog">Invalid Credentials! Please try again.</string>
+
+    <!-- Q03 Strings -->
+    <string name="q03_title">Student Result Portal</string>
+    <string name="q03_desc">Practical 3: TableLayout with Marks &amp; Grades</string>
+    <string name="q03_sub1_label">Subject 1 (Maths):</string>
+    <string name="q03_sub2_label">Subject 2 (Physics):</string>
+    <string name="q03_sub3_label">Subject 3 (Computer):</string>
+    <string name="q03_marks_hint">Marks (0-100)</string>
+    <string name="q03_err_gt100">Marks for any subject cannot exceed 100!</string>
+    <string name="q03_err_empty">Please enter marks for all 3 subjects.</string>
+
+    <!-- Q04 Strings -->
+    <string name="q04_title">Activity Life Cycle Demo</string>
+    <string name="q04_desc">Practical 4: Two Activities &amp; Lifecycle Toast/Logcat</string>
+    <string name="q04_name_hint">Enter your name</string>
+    <string name="q04_welcome_prefix">Welcome, %1$s</string>
+    <string name="q04_resumed_count">Activity Resumed Count: %1$d</string>
+
+    <!-- Q05 Strings -->
+    <string name="q05_title">Dynamic Fragment Switching</string>
+    <string name="q05_desc">Practical 5: FrameLayout single activity with Fragment A &amp; B</string>
+    <string name="q05_btn_frag_a">Show Fragment A</string>
+    <string name="q05_btn_frag_b">Show Fragment B</string>
+    <string name="q05_save_data">Save to Fragment B</string>
+
+    <!-- Q06 Strings -->
+    <string name="q06_title">Image Caption Screen</string>
+    <string name="q06_desc">Practical 6: FrameLayout overlapping Image and Caption</string>
+    <string name="q06_caption_text">Android OS: Robust Mobile Application Platform</string>
+    <string name="q06_toggle_caption">Hide / Show Caption</string>
+    <string name="q06_change_color">Change Color</string>
+    <string name="q06_exit_confirm">Are you sure you want to exit the application?</string>
+
+    <!-- Q07 Strings -->
+    <string name="q07_title">GridView Color Palette</string>
+    <string name="q07_desc">Practical 7: 12 Colors in 3 Columns GridView</string>
+    <string name="q07_selected_preview">Selected Color: None</string>
+
+    <!-- Q08 Strings -->
+    <string name="q08_title">Subject List Manager</string>
+    <string name="q08_desc">Practical 8: ListView with Add &amp; Delete Confirmation</string>
+    <string name="q08_subject_hint">Enter new subject name</string>
+    <string name="q08_btn_add">Add</string>
+    <string name="q08_delete_confirm">Are you sure you want to delete '%1$s' from the list?</string>
+
+    <!-- Q09 Strings -->
+    <string name="q09_title">Floating Counter with Snackbar</string>
+    <string name="q09_desc">Practical 9: CoordinatorLayout with Toolbar, FAB &amp; Snackbar</string>
+    <string name="q09_undo">UNDO</string>
+    <string name="q09_limit_reached">Limit Reached! Maximum count of 10 reached.</string>
+
+    <!-- Q10 Strings -->
+    <string name="q10_title">Registration Form with AppBar</string>
+    <string name="q10_desc">Practical 10: Toolbar with RadioGroup, CheckBoxes &amp; Spinner</string>
+    <string name="q10_gender_male">Male</string>
+    <string name="q10_gender_female">Female</string>
+    <string name="q10_hobby1">Reading</string>
+    <string name="q10_hobby2">Coding</string>
+    <string name="q10_hobby3">Sports</string>
+
+    <!-- Q11 Strings -->
+    <string name="q11_title">Temperature Converter</string>
+    <string name="q11_desc">Practical 11: LinearLayout Celsius / Fahrenheit with Colors</string>
+    <string name="q11_temp_hint">Enter temperature value</string>
+    <string name="q11_c_to_f">Celsius to Fahrenheit (°C → °F)</string>
+    <string name="q11_f_to_c">Fahrenheit to Celsius (°F → °C)</string>
+    <string name="q11_error_empty">Please enter a valid temperature and select conversion!</string>
+
+    <!-- Q12 Strings -->
+    <string name="q12_title">Feedback Screen</string>
+    <string name="q12_desc">Practical 12: AbsoluteLayout fixed X/Y specifications</string>
+    <string name="q12_name_hint">Enter your name</string>
+    <string name="q12_comments_hint">Enter your detailed comments</string>
+    <string name="q12_thank_you">Thank you</string>
+
+    <!-- Q13 Strings -->
+    <string name="q13_title">Rating Screen</string>
+    <string name="q13_desc">Practical 13: RelativeLayout with RatingBar &amp; Inquiries</string>
+    <string name="q13_ask_more">Would you like to add more details?</string>
+
+    <!-- Q14 Strings -->
+    <string name="q14_title">Profile Card with Dark/Light Theme</string>
+    <string name="q14_desc">Practical 14: LinearLayout with Dynamic Theme Switching</string>
+    <string name="q14_profile_name">Alex Johnson</string>
+    <string name="q14_profile_course">B.Tech Computer Science - Android Lab</string>
+    <string name="q14_profile_bio">Passionate mobile software developer creating intuitive Android solutions.</string>
+    <string name="q14_switch_mode">Switch Mode</string>
+    <string name="q14_contact_btn">Contact</string>
+    <string name="q14_contact_info">Email: alex.johnson@example.edu\nPhone: +1 (555) 019-2834\nOffice: Room 402, CS Dept</string>
+
+    <!-- Q15 Strings -->
+    <string name="q15_title">Multiplication Table Generator</string>
+    <string name="q15_desc">Practical 15: TableLayout 1 to 10 with Alternating Row Colors</string>
+    <string name="q15_num_hint">Enter number (e.g. 7)</string>
+    <string name="q15_err_zero">Please enter a valid non-zero number!</string>
+
+    <!-- Q16 Strings -->
+    <string name="q16_title">State Retention Across Lifecycle</string>
+    <string name="q16_desc">Practical 16: Retaining counter across configuration changes</string>
+    <string name="q16_neg_alert">Count cannot become negative! Reset to 0.</string>
+
+    <!-- Q17 Strings -->
+    <string name="q17_title">Dynamic Fragment Management</string>
+    <string name="q17_desc">Practical 17: Add, Replace &amp; Remove Fragment Transactions</string>
+    <string name="q17_btn_add">Add</string>
+    <string name="q17_btn_replace">Replace</string>
+    <string name="q17_btn_remove">Remove</string>
+    <string name="q17_no_frag_toast">No fragment is currently displayed</string>
+
+    <!-- Q18 Strings -->
+    <string name="q18_title">AppBar with Menus and Submenus</string>
+    <string name="q18_desc">Practical 18: Toolbar Options Menu, Submenus &amp; Themes</string>
+    <string name="q18_menu_change_color">Change Color</string>
+    <string name="q18_menu_red">Red</string>
+    <string name="q18_menu_green">Green</string>
+    <string name="q18_menu_blue">Blue</string>
+    <string name="q18_menu_reset">Reset</string>
+    <string name="q18_menu_exit">Exit</string>
+    <string name="q18_center_message">Welcome to the AppBar Options Menu Demo! Choose a color theme from the top-right menu.</string>
+
+    <!-- Q19 Strings -->
+    <string name="q19_title">Inter-Activity Data Passing</string>
+    <string name="q19_desc">Practical 19: Passing Data via Intent Bundle &amp; Classification</string>
+    <string name="q19_city_hint">Enter your city</string>
+    <string name="q19_err_fields">All fields (Name, Age, City) are required!</string>
+    <string name="q19_adult">Adult (18 or above)</string>
+    <string name="q19_minor">Minor (Under 18)</string>
+
+    <!-- Q20 Strings -->
+    <string name="q20_title">Background Service with Notifications</string>
+    <string name="q20_desc">Practical 20: Background Service, System Notification &amp; Lifecycle</string>
+    <string name="q20_start_service">Start Service</string>
+    <string name="q20_stop_service">Stop Service</string>
+    <string name="q20_service_running">Running</string>
+    <string name="q20_service_stopped">Stopped</string>
+    <string name="q20_not_running_alert">Cannot stop service: Service is not currently running!</string>
+    <string name="q20_notif_title">Lab Service Active</string>
+    <string name="q20_notif_msg">Background Service is executing tasks...</string>
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_screen"
+    android:background="@color/screen_background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/q08_title"
+        android:textSize="@dimen/text_size_title"
+        android:textStyle="bold"
+        android:textColor="@color/primary"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/q08_desc"
+        android:textSize="@dimen/text_size_subtitle"
+        android:textColor="@color/text_secondary"
+        android:gravity="center"
+        android:layout_marginTop="4dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_medium">
+
+        <EditText
+            android:id="@+id/etSubjectName"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/edittext_height"
+            android:layout_weight="1"
+            android:hint="@string/q08_subject_hint"
+            android:background="@drawable/card_rounded_bg"
+            android:padding="@dimen/padding_button_vertical"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnAddSubject"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:text="@string/q08_btn_add"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_rounded_primary"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tip: Long-press any item to delete it."
+        android:textSize="@dimen/text_size_subtitle"
+        android:textColor="@color/text_secondary"
+        android:layout_marginTop="8dp" />
+
+    <ListView
+        android:id="@+id/lvSubjects"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/card_rounded_bg"
+        android:layout_marginTop="8dp"
+        android:elevation="3dp"
+        android:divider="@color/gray_light"
+        android:dividerHeight="1dp" />
+</LinearLayout>
