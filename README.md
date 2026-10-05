@@ -44,3 +44,19 @@ This repository contains all 20 practical solutions implemented as block-based *
 1. Open [MIT App Inventor](https://ai2.appinventor.mit.edu/).
 2. Click **Projects** > **Import project (.aia) from my computer**.
 3. Choose any `.aia` file from any of the set folders.
+
+
+---
+
+## 📱 Native Android Studio (Kotlin) Project
+In addition to the MIT App Inventor (.aia) practicals, this repository includes the **complete Native Kotlin Android Studio Application System** (`UIANP308P_Android_Lab`) implementing all 20 practicals.
+
+### 📥 Android Studio Project Download
+- **[Download Complete Android Studio Kotlin Project (ZIP)](https://github.com/Irfanpathan21/upg-mit/releases/download/v1.0.0/UIANP308P_Android_Studio_Kotlin_Project.zip)**
+
+### 🛠 How to Open in Android Studio
+1. Download and extract `UIANP308P_Android_Studio_Kotlin_Project.zip` (or open the `UIANP308P_Android_Lab` folder).
+2. Open **Android Studio** and click **Open**.
+3. Select the `UIANP308P_Android_Lab` directory.
+4. Let Gradle sync and run on any emulator or physical Android device!
+5. The **Master Hub Activity** (`MainActivity.kt`) allows one-click launching of any of the 20 practical activities across all 4 sets.

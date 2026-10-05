@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_screen"
+    android:background="@color/screen_background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/q04_title"
+        android:textSize="@dimen/text_size_title"
+        android:textStyle="bold"
+        android:textColor="@color/primary"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activity 1: Enter Name &amp; Observe Lifecycle Callback Logs"
+        android:textSize="@dimen/text_size_subtitle"
+        android:textColor="@color/text_secondary"
+        android:gravity="center"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/tvResumedCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activity Resumed Count: 0"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size_header"
+        android:textColor="@color/primary"
+        android:gravity="center"
+        android:background="@drawable/card_rounded_bg"
+        android:padding="@dimen/padding_card"
+        android:layout_marginTop="@dimen/margin_medium" />
+
+    <EditText
+        android:id="@+id/etUserName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittext_height"
+        android:hint="@string/q04_name_hint"
+        android:background="@drawable/card_rounded_bg"
+        android:padding="@dimen/padding_button_vertical"
+        android:layout_marginTop="@dimen/margin_medium" />
+
+    <Button
+        android:id="@+id/btnNextActivity"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:text="@string/btn_next"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_rounded_primary"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/margin_medium" />
+
+    <TextView
+        android:id="@+id/tvLifecycleLog1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logcat Events:
+"
+        android:background="@drawable/card_rounded_bg"
+        android:padding="@dimen/padding_card"
+        android:textColor="@color/text_secondary"
+        android:layout_marginTop="@dimen/margin_medium" />
+</LinearLayout>

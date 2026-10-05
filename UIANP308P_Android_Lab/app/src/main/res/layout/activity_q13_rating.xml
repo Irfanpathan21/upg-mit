@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_screen"
+    android:background="@color/screen_background">
+
+    <TextView
+        android:id="@+id/tvRatingTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/q13_title"
+        android:textSize="@dimen/text_size_title"
+        android:textStyle="bold"
+        android:textColor="@color/primary"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tvRatingDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvRatingTitle"
+        android:text="@string/q13_desc"
+        android:textSize="@dimen/text_size_subtitle"
+        android:textColor="@color/text_secondary"
+        android:gravity="center"
+        android:layout_marginTop="4dp" />
+
+    <RelativeLayout
+        android:id="@+id/cardRating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvRatingDesc"
+        android:layout_marginTop="@dimen/margin_large"
+        android:background="@drawable/card_rounded_bg"
+        android:elevation="3dp">
+
+        <TextView
+            android:id="@+id/lblRateExperience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rate your experience (1 to 5 stars):"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblRateExperience"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:numStars="5"
+            android:stepSize="1.0"
+            android:rating="3.0" />
+
+        <TextView
+            android:id="@+id/lblComments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ratingBar"
+            android:layout_marginTop="16dp"
+            android:text="Comments / Feedback:"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary" />
+
+        <EditText
+            android:id="@+id/etRatingComments"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_below="@id/lblComments"
+            android:layout_marginTop="8dp"
+            android:hint="Tell us more about your rating..."
+            android:gravity="top|start"
+            android:background="@drawable/card_rounded_bg"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/btnSubmitRating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etRatingComments"
+            android:layout_marginTop="16dp"
+            android:text="@string/btn_submit"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_rounded_primary" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cardResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardRating"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/card_rounded_bg"
+        android:elevation="3dp">
+
+        <TextView
+            android:id="@+id/lblResultTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submission Status:"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary" />
+
+        <TextView
+            android:id="@+id/tvRatingDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblResultTitle"
+            android:layout_marginTop="8dp"
+            android:text="No rating submitted yet."
+            android:textSize="15sp"
+            android:textColor="@color/text_secondary" />
+    </RelativeLayout>
+
+</RelativeLayout>

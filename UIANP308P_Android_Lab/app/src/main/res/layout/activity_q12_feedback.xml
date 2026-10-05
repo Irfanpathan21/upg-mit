@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/screen_background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/q12_title"
+        android:textSize="@dimen/text_size_title"
+        android:textStyle="bold"
+        android:textColor="@color/primary"
+        android:gravity="center"
+        android:paddingTop="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/q12_desc"
+        android:textSize="@dimen/text_size_subtitle"
+        android:textColor="@color/text_secondary"
+        android:gravity="center"
+        android:paddingBottom="8dp" />
+
+    <!-- Deprecated AbsoluteLayout used specifically to fulfill syllabus specification -->
+    <AbsoluteLayout
+        android:id="@+id/absoluteContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student Name:"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_x="30dp"
+            android:layout_y="30dp" />
+
+        <EditText
+            android:id="@+id/etFeedbackName"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/q12_name_hint"
+            android:inputType="textPersonName"
+            android:layout_x="30dp"
+            android:layout_y="60dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comments:"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_x="30dp"
+            android:layout_y="130dp" />
+
+        <EditText
+            android:id="@+id/etFeedbackComments"
+            android:layout_width="320dp"
+            android:layout_height="120dp"
+            android:gravity="top|start"
+            android:hint="@string/q12_comments_hint"
+            android:inputType="textMultiLine"
+            android:background="@drawable/card_rounded_bg"
+            android:padding="8dp"
+            android:layout_x="30dp"
+            android:layout_y="160dp" />
+
+        <Button
+            android:id="@+id/btnFeedbackSubmit"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_submit"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_rounded_primary"
+            android:layout_x="30dp"
+            android:layout_y="310dp" />
+
+    </AbsoluteLayout>
+</LinearLayout>
