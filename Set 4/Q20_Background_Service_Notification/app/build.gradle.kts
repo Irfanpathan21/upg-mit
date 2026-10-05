@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.uianp308p.q20backgroundser"
+    namespace = "com.uianp308p.q20backgroundservice"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.uianp308p.q20backgroundser"
+        applicationId = "com.uianp308p.q20backgroundservice"
         minSdk = 24
         targetSdk = 35
         versionCode = 1

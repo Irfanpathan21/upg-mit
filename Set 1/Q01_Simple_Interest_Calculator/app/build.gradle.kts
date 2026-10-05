@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.uianp308p.q01simpleinteres"
+    namespace = "com.uianp308p.q01simpleinterest"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.uianp308p.q01simpleinteres"
+        applicationId = "com.uianp308p.q01simpleinterest"
         minSdk = 24
         targetSdk = 35
         versionCode = 1

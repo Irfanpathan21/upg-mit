@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.uianp308p.q19datapassingbe"
+    namespace = "com.uianp308p.q19datapassing"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.uianp308p.q19datapassingbe"
+        applicationId = "com.uianp308p.q19datapassing"
         minSdk = 24
         targetSdk = 35
         versionCode = 1

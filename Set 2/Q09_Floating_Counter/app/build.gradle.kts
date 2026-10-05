@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.uianp308p.q09floatingcount"
+    namespace = "com.uianp308p.q09floatingcounter"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.uianp308p.q09floatingcount"
+        applicationId = "com.uianp308p.q09floatingcounter"
         minSdk = 24
         targetSdk = 35
         versionCode = 1

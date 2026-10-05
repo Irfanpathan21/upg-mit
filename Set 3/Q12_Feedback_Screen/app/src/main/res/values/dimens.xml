@@ -3,9 +3,11 @@
     <!-- Padding & Margins -->
     <dimen name="padding_screen">16dp</dimen>
     <dimen name="padding_card">16dp</dimen>
+    <dimen name="card_padding">16dp</dimen>
     <dimen name="padding_button">24dp</dimen>
     <dimen name="padding_button_vertical">12dp</dimen>
     <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_field">12dp</dimen>
     <dimen name="margin_medium">14dp</dimen>
     <dimen name="margin_large">20dp</dimen>
 
@@ -18,6 +20,7 @@
     <dimen name="text_size_subtitle">13sp</dimen>
     <dimen name="text_size_header">18sp</dimen>
     <dimen name="text_size_body">14sp</dimen>
+    <dimen name="text_size_label">14sp</dimen>
     <dimen name="text_size_large">28sp</dimen>
     <dimen name="text_size_hero">48sp</dimen>
 
@@ -26,6 +29,7 @@
     <dimen name="button_height">50dp</dimen>
     <dimen name="fab_size">56dp</dimen>
     <dimen name="avatar_size">120dp</dimen>
-    <dimen name="image_caption_width">260dp</dimen>
-    <dimen name="image_caption_height">200dp</dimen>
+    <dimen name="image_caption_width">280dp</dimen>
+    <dimen name="image_caption_height">220dp</dimen>
+    <dimen name="grid_color_box_size">90dp</dimen>
 </resources>

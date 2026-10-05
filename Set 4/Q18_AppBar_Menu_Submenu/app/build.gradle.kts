@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.uianp308p.q18appbarmenusub"
+    namespace = "com.uianp308p.q18appbarmenu"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.uianp308p.q18appbarmenusub"
+        applicationId = "com.uianp308p.q18appbarmenu"
         minSdk = 24
         targetSdk = 35
         versionCode = 1

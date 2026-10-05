@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.uianp308p.q04activitylifec"
+    namespace = "com.uianp308p.q04lifecycle"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.uianp308p.q04activitylifec"
+        applicationId = "com.uianp308p.q04lifecycle"
         minSdk = 24
         targetSdk = 35
         versionCode = 1

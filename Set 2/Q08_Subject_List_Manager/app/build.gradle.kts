@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.uianp308p.q08subjectlistma"
+    namespace = "com.uianp308p.q08subjectlist"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.uianp308p.q08subjectlistma"
+        applicationId = "com.uianp308p.q08subjectlist"
         minSdk = 24
         targetSdk = 35
         versionCode = 1

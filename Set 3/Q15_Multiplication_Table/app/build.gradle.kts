@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.uianp308p.q15multiplicatio"
+    namespace = "com.uianp308p.q15multiplicationtable"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.uianp308p.q15multiplicatio"
+        applicationId = "com.uianp308p.q15multiplicationtable"
         minSdk = 24
         targetSdk = 35
         versionCode = 1

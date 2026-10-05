@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.uianp308p.q06imagecaptions"
+    namespace = "com.uianp308p.q06imagecaption"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.uianp308p.q06imagecaptions"
+        applicationId = "com.uianp308p.q06imagecaption"
         minSdk = 24
         targetSdk = 35
         versionCode = 1

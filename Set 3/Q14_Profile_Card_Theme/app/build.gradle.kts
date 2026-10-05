@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.uianp308p.q14profilecardth"
+    namespace = "com.uianp308p.q14profilecard"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.uianp308p.q14profilecardth"
+        applicationId = "com.uianp308p.q14profilecard"
         minSdk = 24
         targetSdk = 35
         versionCode = 1

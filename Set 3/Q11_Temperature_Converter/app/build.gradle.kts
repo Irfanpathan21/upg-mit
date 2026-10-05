@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.uianp308p.q11temperatureco"
+    namespace = "com.uianp308p.q11temperature"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.uianp308p.q11temperatureco"
+        applicationId = "com.uianp308p.q11temperature"
         minSdk = 24
         targetSdk = 35
         versionCode = 1

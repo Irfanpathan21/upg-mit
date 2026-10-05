@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.uianp308p.q05dynamicfragme"
+    namespace = "com.uianp308p.q05fragmentswitching"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.uianp308p.q05dynamicfragme"
+        applicationId = "com.uianp308p.q05fragmentswitching"
         minSdk = 24
         targetSdk = 35
         versionCode = 1

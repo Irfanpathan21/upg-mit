@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.uianp308p.q07gridviewcolor"
+    namespace = "com.uianp308p.q07gridviewpalette"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.uianp308p.q07gridviewcolor"
+        applicationId = "com.uianp308p.q07gridviewpalette"
         minSdk = 24
         targetSdk = 35
         versionCode = 1

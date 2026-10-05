@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.uianp308p.q02loginscreencu"
+    namespace = "com.uianp308p.q02loginscreen"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.uianp308p.q02loginscreencu"
+        applicationId = "com.uianp308p.q02loginscreen"
         minSdk = 24
         targetSdk = 35
         versionCode = 1

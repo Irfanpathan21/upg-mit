@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.uianp308p.q16stateretentio"
+    namespace = "com.uianp308p.q16stateretention"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.uianp308p.q16stateretentio"
+        applicationId = "com.uianp308p.q16stateretention"
         minSdk = 24
         targetSdk = 35
         versionCode = 1

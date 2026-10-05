@@ -78,7 +78,7 @@
     <string name="q08_desc">Practical 8: ListView with Add &amp; Delete Confirmation</string>
     <string name="q08_subject_hint">Enter new subject name</string>
     <string name="q08_btn_add">Add</string>
-    <string name="q08_delete_confirm">Are you sure you want to delete '%1$s' from the list?</string>
+    <string name="q08_delete_confirm">Are you sure you want to delete \'%1$s\' from the list?</string>
 
     <!-- Q09 Strings -->
     <string name="q09_title">Floating Counter with Snackbar</string>

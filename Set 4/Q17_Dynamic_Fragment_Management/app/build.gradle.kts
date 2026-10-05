@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.uianp308p.q17dynamicfragme"
+    namespace = "com.uianp308p.q17fragmentmanagement"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.uianp308p.q17dynamicfragme"
+        applicationId = "com.uianp308p.q17fragmentmanagement"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
