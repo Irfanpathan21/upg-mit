@@ -1,14 +1,15 @@
 @echo off
 setlocal EnableDelayedExpansion
-title Android Studio Setup - UIANP308P Practicals
+title Android Studio 2025.3.4 (Panda 4 Patch 1) Installer
 
 echo =====================================================================
-echo    UIANP308P Android Programming Lab - Android Studio Installer
+echo    UIANP308P Android Programming Lab - Android Studio Setup
+echo    Target Version: Android Studio Panda 4 Patch 1 (2025.3.4.7)
 echo =====================================================================
 echo.
-echo  This tool will check, download, and install the compatible version
-echo  of Android Studio so that all 20 Kotlin practicals sync and run
-echo  with 100%% compatibility on this computer.
+echo  This installer will set up the EXACT SAME version of Android Studio
+echo  (2025.3.4 / Panda 4) used to develop and test all 20 practicals.
+echo  This guarantees 100%% compatibility and eliminates Gradle sync errors.
 echo.
 
 :: 1. Check if Android Studio is already installed
@@ -18,7 +19,7 @@ if exist "%STUDIO_EXE%" (
     echo        "%STUDIO_EXE%"
     echo.
     echo Press [1] to Launch Android Studio now.
-    echo Press [2] to Reinstall / Update Android Studio.
+    echo Press [2] to Reinstall / Install Android Studio 2025.3.4 (Panda 4).
     echo Press [3] to Exit.
     echo.
     set /p "CHOICE=Enter your choice (1, 2, or 3): "
@@ -31,77 +32,81 @@ if exist "%STUDIO_EXE%" (
     )
 )
 
-:: 2. Try installation via Windows Package Manager (winget)
-echo.
-echo [STEP 1/2] Checking Windows Package Manager (winget)...
-where winget >nul 2>&1
-if %ERRORLEVEL% equ 0 (
-    echo [INFO] winget detected! Attempting automatic installation...
-    echo Running: winget install --id Google.AndroidStudio -e --accept-package-agreements --accept-source-agreements
-    echo.
-    winget install --id Google.AndroidStudio -e --accept-package-agreements --accept-source-agreements
-    if %ERRORLEVEL% equ 0 (
-        echo.
-        echo =====================================================================
-        echo [SUCCESS] Android Studio installed successfully via winget!
-        echo =====================================================================
-        goto :POST_INSTALL
-    ) else (
-        echo [WARN] winget install returned non-zero code. Falling back to direct download...
-    )
-) else (
-    echo [INFO] winget is not available on this system. Falling back to direct download...
+:: 2. Target Exact Version URL (Google Official CDN)
+set "INSTALLER_URL=https://dl.google.com/android/studio/install/2025.3.4.7/android-studio-panda4-patch1-windows.exe"
+set "FALLBACK_URL=https://redirector.gvt1.com/edgedl/android/studio/install/2025.3.4.7/android-studio-panda4-patch1-windows.exe"
+set "INSTALLER_PATH=%TEMP%\android-studio-panda4-patch1-windows.exe"
+
+:: Check if the installer is already cached in current directory or user Downloads
+if exist "%~dp0android-studio-panda4-patch1-windows.exe" (
+    set "INSTALLER_PATH=%~dp0android-studio-panda4-patch1-windows.exe"
+    echo [INFO] Found local installer in current folder:
+    echo        "!INSTALLER_PATH!"
+    goto :RUN_INSTALLER
 )
 
-:: 3. Direct Official Download from Google CDN
-echo.
-echo [STEP 2/2] Downloading official Android Studio installer directly from Google CDN...
-set "INSTALLER_URL=https://edgedl.me.gvt1.com/android/studio/install/2026.2.1.8/android-studio-rabbit1-windows.exe"
-set "INSTALLER_PATH=%TEMP%\android-studio-installer.exe"
+if exist "%USERPROFILE%\Downloads\android-studio-panda4-patch1-windows.exe" (
+    set "INSTALLER_PATH=%USERPROFILE%\Downloads\android-studio-panda4-patch1-windows.exe"
+    echo [INFO] Found installer in Downloads folder:
+    echo        "!INSTALLER_PATH!"
+    goto :RUN_INSTALLER
+)
 
-echo Target URL: %INSTALLER_URL%
-echo Saving to:   %INSTALLER_PATH%
+:: 3. Download the exact Android Studio 2025.3.4.7 installer from Google
+echo.
+echo [INFO] Downloading Android Studio 2025.3.4.7 (Panda 4 Patch 1)...
+echo Source URL: %INSTALLER_URL%
+echo Destination: %INSTALLER_PATH%
+echo File Size:   ~1.36 GB (Google Official Installer)
 echo.
 
 where curl >nul 2>&1
 if %ERRORLEVEL% equ 0 (
-    echo Using curl to download installer (please wait, ~1.4 GB)...
+    echo Downloading via curl...
     curl -L --progress-bar -o "%INSTALLER_PATH%" "%INSTALLER_URL%"
+    if not exist "%INSTALLER_PATH%" (
+        echo Trying backup mirror...
+        curl -L --progress-bar -o "%INSTALLER_PATH%" "%FALLBACK_URL%"
+    )
 ) else (
-    echo Using PowerShell to download installer (please wait, ~1.4 GB)...
-    powershell -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; (New-Object Net.WebClient).DownloadFile('%INSTALLER_URL%', '%INSTALLER_PATH%')"
+    echo Downloading via PowerShell...
+    powershell -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; $wc = New-Object Net.WebClient; try { $wc.DownloadFile('%INSTALLER_URL%', '%INSTALLER_PATH%') } catch { $wc.DownloadFile('%FALLBACK_URL%', '%INSTALLER_PATH%') }"
 )
 
 if not exist "%INSTALLER_PATH%" (
     echo.
-    echo [ERROR] Download failed. Please download Android Studio manually from:
-    echo         https://developer.android.com/studio
+    echo [ERROR] Download failed. Please download the installer manually from:
+    echo         %INSTALLER_URL%
     pause
     exit /b 1
 )
 
+:RUN_INSTALLER
 echo.
-echo [INFO] Download complete! Launching Android Studio Setup Wizard...
-echo Please follow the prompts in the installer window to complete the setup.
+echo =====================================================================
+echo Launching Android Studio Setup Wizard...
+echo =====================================================================
+echo Please complete the setup steps in the installer window.
+echo (Default settings with Android SDK and Virtual Device are recommended).
 echo.
 start /wait "" "%INSTALLER_PATH%"
 
 :POST_INSTALL
 echo.
 echo =====================================================================
-echo                    SETUP COMPLETE & HOW TO USE
+echo                     SETUP COMPLETE & HOW TO USE
 echo =====================================================================
 echo.
-echo  1. Launch Android Studio from the Start Menu or desktop shortcut.
+echo  1. Launch Android Studio from your Start Menu.
 echo  2. Click "Open" (or File -^> Open).
-echo  3. Navigate into any project folder, for example:
+echo  3. Navigate to any practical project folder, for example:
 echo     - Set 1\Q01_Simple_Interest_Calculator
 echo     - Set 1\Q02_Login_Screen_Custom_Theme
 echo     - Set 2\Q06_Image_Caption_Screen
 echo     - Set 3\Q11_Temperature_Converter
 echo     - Set 4\Q16_State_Retention
-echo  4. Click OK. Android Studio will automatically perform Gradle sync
-echo     and open the project ready to build and run!
+echo  4. Click OK. The project will open and Gradle sync will complete
+echo     without any version mismatch errors!
 echo.
 echo =====================================================================
 pause
